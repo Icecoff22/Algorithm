@@ -32,13 +32,14 @@ while True:
         nx = nx - dx[d]
         ny = ny - dy[d]
         turn_time+=1
-        if turn_time==4:
-            break
+        
     else:
         print(nx, ny)
         checked[nx][ny]=1
         count+=1
         turn_time=0
 
+    if turn_time==4:
+            break
 
 print(count)
