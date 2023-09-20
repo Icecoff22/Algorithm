@@ -13,16 +13,12 @@ def bfs(x, y):
         ax = x + dx[i]
         ay = y + dy[i]
         if ax<0 or ax >=N or ay<0 or ay>=M or arr[ax][ay]==1:
-            print("continue:", ax, ay)
             continue
-        print("bfs:", ax, ay)
         bfs(ax, ay)
     
-print(arr)
 for i in range(N):
     for j in range(M):
         if arr[i][j]==0:
-            print(i, j)
             count+=1
             bfs(i, j)
 print(count)
