@@ -8,3 +8,14 @@ for i in range(len(array)):
 for i in range(len(count)):
     for j in range(count[i]):
         print(i, end=' ')
+        
+res = sorted(array)
+print(res)
+
+array2 = [('바나나', 2), ('사과', 5), ('당근', 3)]
+
+def setting(data):
+    return data[0]
+
+res2 = sorted(array2, key=setting)
+print(res2)
