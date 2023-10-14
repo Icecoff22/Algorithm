@@ -1,3 +1,4 @@
+import sys
 def is_promising(x):
     for i in range(x):
         if arr[i] == arr[x] or abs(x-i)==abs(arr[x]-arr[i]):
@@ -17,7 +18,7 @@ def n_queen(x):
                 n_queen(x+1)
                 visited[i]==False
 
-n = int(input())
+n = int(sys.stdin.readline())
 ans = 0
 arr = [0] * n
 visited = [False] * n
