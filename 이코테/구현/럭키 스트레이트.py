@@ -2,7 +2,6 @@ n = input()
 
 half = len(n)//2
 
-
 left_sum = 0
 right_sum = 0
 
