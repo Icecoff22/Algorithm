@@ -21,4 +21,4 @@ while True:
     sum+=res
 
 print(sum)
-    
+#짧은 소감 : 딕셔너리의 활용법을 어느정도 익힌 문제.
