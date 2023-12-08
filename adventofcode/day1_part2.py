@@ -1,9 +1,9 @@
 def check(chk, i):
     global minidx, maxidx, min_num, max_num
-    if minidx>=chk:
+    if minidx>chk:
         minidx = chk
         min_num = number_num[i]
-    if maxidx<=chk:
+    if maxidx<chk:
         maxidx = chk
         max_num = number_num[i]
 
@@ -15,7 +15,7 @@ while True:
     min_num = '0'
     max_num = '0'
     minidx = 999999
-    maxidx = 0
+    maxidx = -1
     a = input()
     if a=='':
         break
