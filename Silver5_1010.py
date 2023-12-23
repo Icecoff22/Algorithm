@@ -15,7 +15,8 @@ for _ in range(T):
                     sum+=arr[i-1][k]
                 arr[i][j] = sum
     print(arr[n][m])
-                    
+
+#링크 : https://www.acmicpc.net/problem/1010                    
         
         
     
