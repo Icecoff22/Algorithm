@@ -13,5 +13,5 @@ for i in range(K):
         q.append(n)
 res = 0
 for i in q:
-    res + res + i
+    res = res + i
 print(res)

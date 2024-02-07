@@ -12,5 +12,5 @@ for i in range(N):
     arr.append((tmp,len(tmp)))
 
 arr.sort(key=lambda x: x[1])
-for i in range(1,arr[len(arr)-1][1]+1):
+#for i in range(1,arr[len(arr)-1][1]+1):
     
