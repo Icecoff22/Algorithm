@@ -42,4 +42,3 @@ tmp = [-1 for i in range(n)]
 arr = list(map(int, input().split()))
 merge_sort(arr, 0, len(arr)-1)
 print(res)
-
