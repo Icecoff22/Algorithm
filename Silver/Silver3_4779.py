@@ -12,7 +12,7 @@ while True:
     try:
         N = int(sys.stdin.readline())
         res = ['-'] * pow(3,N)
-        func(0, 3**N)
+        func(0, pow(3,N))
         print(''.join(res))
     except:
         break
