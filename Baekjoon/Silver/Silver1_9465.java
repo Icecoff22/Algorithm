@@ -24,6 +24,7 @@ public class Silver1_9465 {
 
             if (n == 1) {
                 System.out.println(Math.max(arr[0][0], arr[1][0]));
+                continue;
             }
 
             res[0][0] = arr[0][0];
