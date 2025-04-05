@@ -6,15 +6,14 @@ import java.util.List;
 
 public class Silver5_1251 {
 
-    private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in), 1<<16);
-
     public static void main(String[] args) throws Exception {
-        String s = br.readLine();
-        int len = s.length();
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str = br.readLine();
+        int len = str.length();
         List<String> arr = new ArrayList<>();
         for (int a = 1; a < len; a++) {
             for (int b = a+1; b < len; b++) {
-                arr.add(getWord(s, a, b));
+                arr.add(getWord(str, a, b));
             }
         }
         Collections.sort(arr);
@@ -22,11 +21,11 @@ public class Silver5_1251 {
     }
 
     public static String getWord(final String s, final int a, final int b) {
-        StringBuilder s1 = new StringBuilder(s.substring(0, a));
-        StringBuilder s2 = new StringBuilder(s.substring(a, b));
-        StringBuilder s3 = new StringBuilder(s.substring(b));
+        StringBuilder str1 = new StringBuilder(s.substring(0, a));
+        StringBuilder str2 = new StringBuilder(s.substring(a, b));
+        StringBuilder str3 = new StringBuilder(s.substring(b));
         StringBuilder sb = new StringBuilder();
-        sb.append(s1.reverse()).append(s2.reverse()).append(s3.reverse());
+        sb.append(str1.reverse()).append(str2.reverse()).append(str3.reverse());
         return sb.toString();
     }
 }
